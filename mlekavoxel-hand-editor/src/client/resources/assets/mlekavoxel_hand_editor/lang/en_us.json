@@ -1,0 +1,12 @@
+{
+  "key.category.mlekavoxel_hand_editor.editor": "MlekaVoxel",
+  "key.mlekavoxel_hand_editor.open": "Hand Editor",
+  "screen.mlekavoxel_hand_editor.title": "MlekaVoxel — Hand Editor",
+  "screen.mlekavoxel_hand_editor.hint": "Drag a hand frame • mouse wheel changes size • H opens the editor",
+  "screen.mlekavoxel_hand_editor.right": "Right hand",
+  "screen.mlekavoxel_hand_editor.left": "Left hand",
+  "screen.mlekavoxel_hand_editor.right_handle": "RIGHT",
+  "screen.mlekavoxel_hand_editor.left_handle": "LEFT",
+  "screen.mlekavoxel_hand_editor.reset_selected": "Reset hand",
+  "screen.mlekavoxel_hand_editor.reset_all": "Reset all"
+}

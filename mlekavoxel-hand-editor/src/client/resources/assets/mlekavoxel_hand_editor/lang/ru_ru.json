@@ -1,0 +1,12 @@
+{
+  "key.category.mlekavoxel_hand_editor.editor": "MlekaVoxel",
+  "key.mlekavoxel_hand_editor.open": "Редактор рук",
+  "screen.mlekavoxel_hand_editor.title": "MlekaVoxel — редактор рук",
+  "screen.mlekavoxel_hand_editor.hint": "Перетащи рамку руки мышью • колесо меняет размер • H открывает редактор",
+  "screen.mlekavoxel_hand_editor.right": "Правая рука",
+  "screen.mlekavoxel_hand_editor.left": "Левая рука",
+  "screen.mlekavoxel_hand_editor.right_handle": "ПРАВАЯ",
+  "screen.mlekavoxel_hand_editor.left_handle": "ЛЕВАЯ",
+  "screen.mlekavoxel_hand_editor.reset_selected": "Сбросить руку",
+  "screen.mlekavoxel_hand_editor.reset_all": "Сбросить всё"
+}

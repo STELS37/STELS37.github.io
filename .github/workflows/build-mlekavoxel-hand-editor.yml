@@ -1,0 +1,39 @@
+name: Build MlekaVoxel Hand Editor
+
+on:
+  push:
+    branches:
+      - mlekavoxel-hand-editor
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '25'
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '9.5.1'
+      - name: Build
+        working-directory: mlekavoxel-hand-editor
+        run: gradle clean build --no-daemon
+      - name: Publish JAR to branch
+        run: |
+          mkdir -p mlekavoxel-hand-editor/releases
+          cp mlekavoxel-hand-editor/build/libs/MlekaVoxel-Hand-Editor-1.0.0+26.1.2.jar mlekavoxel-hand-editor/releases/
+          cp mlekavoxel-hand-editor/build/libs/MlekaVoxel-Hand-Editor-1.0.0+26.1.2-sources.jar mlekavoxel-hand-editor/releases/
+          sha256sum mlekavoxel-hand-editor/releases/*.jar > mlekavoxel-hand-editor/releases/SHA256SUMS.txt
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add mlekavoxel-hand-editor/releases
+          if ! git diff --cached --quiet; then
+            git commit -m "Build MlekaVoxel Hand Editor 26.1.2"
+            git push
+          fi

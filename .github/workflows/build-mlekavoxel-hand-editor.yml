@@ -27,8 +27,8 @@ jobs:
       - name: Publish JAR to branch
         run: |
           mkdir -p mlekavoxel-hand-editor/releases
-          cp mlekavoxel-hand-editor/build/libs/MlekaVoxel-Hand-Editor-1.0.0+26.1.2.jar mlekavoxel-hand-editor/releases/
-          cp mlekavoxel-hand-editor/build/libs/MlekaVoxel-Hand-Editor-1.0.0+26.1.2-sources.jar mlekavoxel-hand-editor/releases/
+          rm -f mlekavoxel-hand-editor/releases/MlekaVoxel-Hand-Editor-*.jar
+          cp mlekavoxel-hand-editor/build/libs/MlekaVoxel-Hand-Editor-*.jar mlekavoxel-hand-editor/releases/
           sha256sum mlekavoxel-hand-editor/releases/*.jar > mlekavoxel-hand-editor/releases/SHA256SUMS.txt
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

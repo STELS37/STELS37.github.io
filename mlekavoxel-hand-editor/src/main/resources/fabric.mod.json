@@ -3,12 +3,21 @@
   "id": "mlekavoxel_hand_editor",
   "version": "${version}",
   "name": "MlekaVoxel Hand Editor",
-  "description": "Independent first-person right/left hand positioning and scaling for MlekaVoxel on Minecraft 26.1.2.",
+  "description": "Independent 3-axis first-person hand positioning, non-zero real scaling and Mleka Flow swing animation for Minecraft 26.1.2.",
   "authors": ["MlekaVoxel"],
   "license": "MIT",
   "environment": "client",
-  "entrypoints": {"client": ["cc.globalsystem.mlekavoxel.handeditor.MlekaHandEditorClient"]},
-  "mixins": [{"config": "mlekavoxel_hand_editor.client.mixins.json", "environment": "client"}],
+  "entrypoints": {
+    "client": [
+      "cc.globalsystem.mlekavoxel.handeditor.MlekaHandEditorClient"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "mlekavoxel_hand_editor.client.mixins.json",
+      "environment": "client"
+    }
+  ],
   "depends": {
     "fabricloader": ">=0.19.3",
     "minecraft": "~26.1.2",

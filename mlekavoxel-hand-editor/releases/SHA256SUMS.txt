@@ -1,0 +1,2 @@
+7fd43bd09bb1084340e51b31728e12ff0819adddd4f5fd1ad18c50c93fbb522f  mlekavoxel-hand-editor/releases/MlekaVoxel-Hand-Editor-1.0.0+26.1.2-sources.jar
+d773f141a63531a5139274b0c96cb945d03ed6a22c342cf7db25a44e953e2fdf  mlekavoxel-hand-editor/releases/MlekaVoxel-Hand-Editor-1.0.0+26.1.2.jar
